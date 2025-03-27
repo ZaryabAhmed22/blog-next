@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/home/hero";
 import FeaturedPosts from "../components/home/featured-posts";
 
-const DUMMY_POSTS = [
+export const DUMMY_POSTS = [
   {
     title: "Getting started with Next JS",
     image: "getting-started-with-nextjs.png",
