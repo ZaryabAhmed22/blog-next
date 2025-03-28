@@ -14,7 +14,6 @@ export default function PostItem({ post }) {
 
   //   const imagePath = `/images/posts/${slug}/${image}`;
   const imagePath = `/images/posts/getting-started-with-nextjs/getting-started-nextjs.png`;
-  console.log(imagePath);
 
   return (
     <li className={classes.post}>
