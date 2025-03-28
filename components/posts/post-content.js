@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./post-content.module.css";
 import PostHeader from "./post-header";
+import ReactMarkdown from "react-markdown";
 
 const DUMMY_POST = {
   title: "Getting started with Next JS",
@@ -15,7 +16,7 @@ export default function PostContent() {
   return (
     <article className={classes.content}>
       <PostHeader title={title} image={imagePath} />
-      {content}
+      <ReactMarkdown>{content}</ReactMarkdown>
     </article>
   );
 }
