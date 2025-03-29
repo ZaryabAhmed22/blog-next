@@ -1,10 +1,10 @@
 import React from "react";
 import PostContent from "./post-content";
 
-export default function PostDetail() {
+export default function PostDetail({ post }) {
   return (
     <>
-      <PostContent />
+      <PostContent post={post} />
     </>
   );
 }
