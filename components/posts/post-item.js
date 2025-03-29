@@ -31,7 +31,7 @@ export default function PostItem({ post }) {
           </div>
 
           {/* Content container */}
-          <div>
+          <div className={classes.content}>
             <h3>{title}</h3>
             <time>{formattedDate}</time>
             <p>{excerpt}</p>
