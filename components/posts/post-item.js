@@ -12,8 +12,7 @@ export default function PostItem({ post }) {
     year: "numeric",
   });
 
-  //   const imagePath = `/images/posts/${slug}/${image}`;
-  const imagePath = `/images/posts/getting-started-with-nextjs/getting-started-nextjs.png`;
+  const imagePath = `/images/posts/${slug}/${image}`;
 
   return (
     <li className={classes.post}>
