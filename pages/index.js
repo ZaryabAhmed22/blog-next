@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../components/home/hero";
 import FeaturedPosts from "../components/home/featured-posts";
 import { getFeaturedPosts } from "../lib/posts-util";
+import Head from "next/head";
 
 // export const DUMMY_POSTS = [
 //   {
@@ -39,10 +40,17 @@ import { getFeaturedPosts } from "../lib/posts-util";
 // ];
 export default function HomePage(props) {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Zaryab's Code-log</title>
+        <meta
+          name="description"
+          content="I post about programming and web development"
+        />
+      </Head>
       <Hero />
       <FeaturedPosts posts={props.posts} />
-    </div>
+    </>
   );
 }
 
